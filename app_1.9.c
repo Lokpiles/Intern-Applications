@@ -2,7 +2,7 @@
  * File:   app_1.9.c
  * Author: Emircan Furkan Bayendur
  *
- * Created on 14 Temmuz 2021 Çarþamba, 16:16
+ * Created on 14 Temmuz 2021 Ã‡arÃ¾amba, 16:16
  */
 
 
@@ -26,28 +26,28 @@ void interrupt kesme(void){
 
 
 void main(void) {
-    EEPROM_WRITE(0,'e');
-//    EEIE =1;
-//    TRISB=0;
-//    TRISA=255;
-//    sayac =0;
-//    PORTB=0;
-//    
-//    while(1){
-//         if(RA0==1){
-//             while(RA0=1){}
-//            eeprom_write(1,'e');
-//            __delay_ms(100);
+   
+    EEIE =1;
+    TRISB=0;
+    TRISA=255;
+    sayac =0;
+    PORTB=0;
+    
+    while(1){
+        if(RA0==1){
+            while(RA0=1){}
+            eeprom_write(1,'e');
+            __delay_ms(100);
 
-//             GIE=0;
-//             sayac++;
-//             EEADR =0X2F;
-//             EEDATA=sayac;
-//             WREN=1;
-//             EECON2=85;
-//             EECON2=170;
-//             WR=1;
-//             GIE=1;
+             GIE=0;
+             sayac++;
+             EEADR =0X2F;
+             EEDATA=sayac;
+             WREN=1;
+             EECON2=85;
+             EECON2=170;
+             WR=1;
+             GIE=1;
                      
                     
              
